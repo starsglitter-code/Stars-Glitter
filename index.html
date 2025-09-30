@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>روابط المحل</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+    :root {
+      --gold: #d4af37;
+      --white: #ffffff;
+      --black: #000000;
+      --dark-gray: #111111;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background: var(--black);
+      color: var(--white);
+      text-align: center;
+      direction: rtl;
+    }
+
+    .container {
+      max-width: 420px;
+      margin: 50px auto;
+      background: var(--dark-gray);
+      padding: 30px 25px;
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(212, 175, 55, 0.3);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+    }
+
+    img.logo {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--gold);
+      margin-bottom: 20px;
+      box-shadow: 0 0 15px rgba(212,175,55,0.5);
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      font-size: 28px;
+      color: var(--gold);
+    }
+
+    p.subtitle {
+      margin-bottom: 25px;
+      font-size: 16px;
+      color: #ccc;
+    }
+
+    .link-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-decoration: none;
+      margin: 12px 0;
+      padding: 14px 18px;
+      font-size: 18px;
+      font-weight: 600;
+      border-radius: 40px;
+      background: transparent;
+      color: var(--white);
+      border: 2px solid var(--gold);
+      transition: all 0.3s ease;
+      box-shadow: 0 0 8px rgba(212,175,55,0.3);
+    }
+
+    .link-btn:hover {
+      background: var(--gold);
+      color: var(--black);
+      box-shadow: 0 0 15px rgba(212,175,55,0.6);
+      transform: translateY(-2px);
+    }
+
+    .icon {
+      font-size: 22px;
+      color: var(--gold);
+    }
+
+    .footer {
+      margin-top: 25px;
+      font-size: 13px;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="PUT-YOUR-LOGO-URL-HERE" alt="شعار المحل" class="logo" />
+
+    <h1>اسم المحل</h1>
+    <p class="subtitle">مرحباً بكم! تابعونا على منصاتنا المختلفة</p>
+
+    <!-- روابط الأزرار -->
+    <a href="https://instagram.com/yourpage" class="link-btn">
+      <span class="icon">📷</span> انستغرام
+    </a>
+
+    <a href="https://www.tiktok.com/@yourpage" class="link-btn">
+      <span class="icon">🎵</span> تيك توك
+    </a>
+
+    <a href="https://www.snapchat.com/add/yourpage" class="link-btn">
+      <span class="icon">👻</span> سناب شات
+    </a>
+
+    <a href="https://wa.me/9665XXXXXXXX" class="link-btn">
+      <span class="icon">💬</span> واتساب
+    </a>
+
+    <a href="https://maps.google.com/?q=YOURLOCATION" class="link-btn">
+      <span class="icon">📍</span> الموقع على الخريطة
+    </a>
+
+    <div class="footer">
+      &copy; 2025 جميع الحقوق محفوظة | اسم المحل
+    </div>
+  </div>
+</body>
+</html>
