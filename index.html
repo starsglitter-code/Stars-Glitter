@@ -1,130 +1,100 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>روابط المحل</title>
-
+  <title>Star's Glitter</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
-
-    :root {
-      --gold: #d4af37;
-      --white: #ffffff;
-      --black: #000000;
-      --dark-gray: #111111;
-    }
-
     body {
       margin: 0;
-      font-family: 'Cairo', sans-serif;
-      background: var(--black);
-      color: var(--white);
-      text-align: center;
-      direction: rtl;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
     }
 
-    .container {
-      max-width: 420px;
-      margin: 50px auto;
-      background: var(--dark-gray);
-      padding: 30px 25px;
-      border-radius: 20px;
-      box-shadow: 0 0 25px rgba(212, 175, 55, 0.3);
-      border: 1px solid rgba(212, 175, 55, 0.3);
-    }
-
-    img.logo {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid var(--gold);
-      margin-bottom: 20px;
-      box-shadow: 0 0 15px rgba(212,175,55,0.5);
+    header img {
+      width: 180px;
+      height: auto;
+      margin-top: 30px;
+      border-radius: 10px;
     }
 
     h1 {
-      margin-bottom: 10px;
-      font-size: 28px;
-      color: var(--gold);
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      color: gold;
+      margin: 15px 0 5px 0;
+      text-align: center;
     }
 
-    p.subtitle {
-      margin-bottom: 25px;
-      font-size: 16px;
-      color: #ccc;
+    p.slogan {
+      font-size: 1.1rem;
+      color: #fff;
+      margin-bottom: 30px;
+      text-align: center;
+      font-weight: 300;
     }
 
-    .link-btn {
+    .links {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
+      flex-direction: column;
+      width: 85%;
+      max-width: 350px;
+      gap: 15px;
+    }
+
+    .links a {
       text-decoration: none;
-      margin: 12px 0;
-      padding: 14px 18px;
-      font-size: 18px;
+      font-size: 1rem;
       font-weight: 600;
-      border-radius: 40px;
-      background: transparent;
-      color: var(--white);
-      border: 2px solid var(--gold);
+      background: linear-gradient(90deg, gold, #d4af37);
+      color: black;
+      padding: 14px;
+      text-align: center;
+      border-radius: 8px;
       transition: all 0.3s ease;
-      box-shadow: 0 0 8px rgba(212,175,55,0.3);
+      box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
     }
 
-    .link-btn:hover {
-      background: var(--gold);
-      color: var(--black);
-      box-shadow: 0 0 15px rgba(212,175,55,0.6);
-      transform: translateY(-2px);
+    .links a:hover {
+      transform: scale(1.05);
+      background: linear-gradient(90deg, #ffd700, #b8860b);
     }
 
-    .icon {
-      font-size: 22px;
-      color: var(--gold);
-    }
-
-    .footer {
-      margin-top: 25px;
-      font-size: 13px;
-      color: #777;
+    footer {
+      color: #888;
+      font-size: 0.8rem;
+      margin-top: auto;
+      margin-bottom: 15px;
+      text-align: center;
     }
   </style>
 </head>
-
 <body>
-  <div class="container">
-    <img src="PUT-YOUR-LOGO-URL-HERE" alt="شعار المحل" class="logo" />
+  <header>
+    <img src="logo.png" alt="Star's Glitter Logo">
+    <h1>Star's Glitter</h1>
+    <p class="slogan">Make-Up Store &amp; More</p>
+  </header>
 
-    <h1>اسم المحل</h1>
-    <p class="subtitle">مرحباً بكم! تابعونا على منصاتنا المختلفة</p>
+  <section class="links">
+    <a href="https://wa.me/201094308693" target="_blank">💬 WhatsApp</a>
+    <a href="https://maps.app.goo.gl/TMQBnNrUB5sP6pvj6?g_st=com.google.maps.preview.copy" target="_blank">📍 Location</a>
+    <a href="https://tiktok.com/@starsglitter1" target="_blank">🎵 TikTok</a>
+    <a href="https://www.facebook.com/share/1GzPdKCo34/?mibextid=wwXIfr" target="_blank">📘 Facebook Page</a>
+    <a href="https://instagram.com/starsglitter1?igshid=39cnsxbmfnvu" target="_blank">📸 Instagram</a>
+    <a href="https://www.facebook.com/groups/1189132021150055" target="_blank">👥 Facebook Group</a>
+  </section>
 
-    <!-- روابط الأزرار -->
-    <a href="https://instagram.com/yourpage" class="link-btn">
-      <span class="icon">📷</span> انستغرام
-    </a>
-
-    <a href="https://www.tiktok.com/@yourpage" class="link-btn">
-      <span class="icon">🎵</span> تيك توك
-    </a>
-
-    <a href="https://www.snapchat.com/add/yourpage" class="link-btn">
-      <span class="icon">👻</span> سناب شات
-    </a>
-
-    <a href="https://wa.me/9665XXXXXXXX" class="link-btn">
-      <span class="icon">💬</span> واتساب
-    </a>
-
-    <a href="https://maps.google.com/?q=YOURLOCATION" class="link-btn">
-      <span class="icon">📍</span> الموقع على الخريطة
-    </a>
-
-    <div class="footer">
-      &copy; 2025 جميع الحقوق محفوظة | اسم المحل
-    </div>
-  </div>
+  <footer>
+    © 2025 Star's Glitter
+  </footer>
 </body>
 </html>
